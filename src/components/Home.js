@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -59,30 +60,30 @@ function Home() {
       <div id="content"></div>
       <hr />
       <div className="menu-second">
-        <a className="menu-two" href="index.html">
+        <Link className="menu-two" to="/">
           Квартира
-        </a>
-        <a className="menu-two" href="index.html">
+        </Link>
+        <Link className="menu-two" to="/">
           Дом
-        </a>
-        <a className="menu-two" href="index.html">
+        </Link>
+        <Link className="menu-two" to="/">
           Комната
-        </a>
-        <a className="menu-two" href="index.html">
+        </Link>
+        <Link className="menu-two" to="/">
           Дача
-        </a>
-        <a className="menu-two" href="index.html">
+        </Link>
+        <Link className="menu-two" to="/">
           Каналы
-        </a>
-        <a className="menu-two" href="index.html">
+        </Link>
+        <Link className="menu-two" to="/">
           События
-        </a>
-        <a className="menu-two" href="index.html">
+        </Link>
+        <Link className="menu-two" to="/">
           Предложения
-        </a>
-        <a className="menu-two" href="index.html">
+        </Link>
+        <Link className="menu-two" to="/">
           Топ
-        </a>
+        </Link>
       </div>
       <hr />
       <br />
@@ -275,16 +276,16 @@ function Home() {
         {/* First set of pictures */}
         <div className="plus-pictures">
           <img className="img1" src="image/IMG_7841.jpg" alt="" width="400px" />
-          <div className="plus-sign" id="chair" onClick={() => toggleContent('content1', 'chair')}>
+          <div className="plus-sign" id="chair" onClick={() => toggleContent("content1", "chair")}>
             +
           </div>
-          <div className="plus-sign" id="laptop" onClick={() => toggleContent('content2', 'laptop')}>
+          <div className="plus-sign" id="laptop" onClick={() => toggleContent("content2", "laptop")}>
             +
           </div>
-          <div className="plus-sign" id="pad" onClick={() => toggleContent('content3', 'pad')}>
+          <div className="plus-sign" id="pad" onClick={() => toggleContent("content3", "pad")}>
             +
           </div>
-          <div className="plus-sign" id="lamp" onClick={() => toggleContent('content4', 'lamp')}>
+          <div className="plus-sign" id="lamp" onClick={() => toggleContent("content4", "lamp")}>
             +
           </div>
           <p className="text1">
@@ -318,16 +319,16 @@ function Home() {
         {/* Second set of pictures */}
         <div className="plus-pictures">
           <img className="img1" src="image/IMG_8391.JPG " alt="" width="400px" height="416px" />
-          <div className="plus-sign" id="armchair" onClick={() => toggleContent('content5', 'armchair')}>
+          <div className="plus-sign" id="armchair" onClick={() => toggleContent("content5", "armchair")}>
             +
           </div>
-          <div className="plus-sign" id="window" onClick={() => toggleContent('content6', 'window')}>
+          <div className="plus-sign" id="window" onClick={() => toggleContent("content6", "window")}>
             +
           </div>
-          <div className="plus-sign" id="cubboard" onClick={() => toggleContent('content7', 'cubboard')}>
+          <div className="plus-sign" id="cubboard" onClick={() => toggleContent("content7", "cubboard")}>
             +
           </div>
-          <div className="plus-sign" id="puffer" onClick={() => toggleContent('content8', 'puffer')}>
+          <div className="plus-sign" id="puffer" onClick={() => toggleContent("content8", "puffer")}>
             +
           </div>
           <p className="text1">

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "./Log.css";
+import "../styles//Log.css";
 
 function Log() {
   function login() {
