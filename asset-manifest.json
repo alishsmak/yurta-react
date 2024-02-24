@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/yurta-react/static/css/main.07d4f9a5.css",
+    "main.js": "/yurta-react/static/js/main.8e0a6b35.js",
+    "index.html": "/yurta-react/index.html",
+    "main.07d4f9a5.css.map": "/yurta-react/static/css/main.07d4f9a5.css.map",
+    "main.8e0a6b35.js.map": "/yurta-react/static/js/main.8e0a6b35.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07d4f9a5.css",
+    "static/js/main.8e0a6b35.js"
+  ]
+}
