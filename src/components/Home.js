@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
+import Headroom from "react-headroom";
+import "../styles/Home.css";
 
 function Home() {
   /*ПОИСК*/
@@ -55,9 +57,10 @@ function Home() {
   }
 
   return (
-    <>
-      <Header />
-      <div id="content"></div>
+    <main>
+      <Headroom>
+        <Header />
+      </Headroom>
       <hr />
       <div className="menu-second">
         <Link className="menu-two" to="/">
@@ -272,8 +275,8 @@ function Home() {
       </div>
       <br />
       {/*Плюсики*/}
-      <div className="plus">
-        {/* First set of pictures */}
+      {/* <div className="plus">
+        First set of pictures
         <div className="plus-pictures">
           <img className="img1" src="image/IMG_7841.jpg" alt="" width="400px" />
           <div className="plus-sign" id="chair" onClick={() => toggleContent("content1", "chair")}>
@@ -292,7 +295,7 @@ function Home() {
             <b>Желтый,желтый,желтый</b> Оформление рабочей зоны в необычном и не скучном стиле
           </p>
         </div>
-        {/* Выход всех товаров после клика на них */}
+        Выход всех товаров после клика на них
         <div className="content" id="content1">
           <img src="image/chair.jpg" alt="" width="70px" />
           <img src="image/chair2.jpg" width="70px" alt="" />
@@ -316,7 +319,7 @@ function Home() {
           <h6>Лампа настольная 60W желтая на металлической подставке</h6>
           <p>3 877тг.</p>
         </div>
-        {/* Second set of pictures */}
+       Second set of pictures
         <div className="plus-pictures">
           <img className="img1" src="image/IMG_8391.JPG " alt="" width="400px" height="416px" />
           <div className="plus-sign" id="armchair" onClick={() => toggleContent("content5", "armchair")}>
@@ -367,7 +370,7 @@ function Home() {
             <b>Стоимость: 62 323 ₸</b>
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="headline">
         <h4>Возможно вы искали именно это!</h4>
       </div>
@@ -1061,7 +1064,7 @@ function Home() {
       &nbsp; &nbsp;
       <Footer />
       &nbsp; &nbsp;
-    </>
+    </main>
   );
 }
 
