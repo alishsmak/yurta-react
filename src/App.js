@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Log from "./components/Log";
 import Letter from "./components/Letter";
 import "./App.css";
+import YurtaHome from "./components/YurtaHome";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/log" element={<Log />} />
         <Route path="/letter" element={<Letter />} />
+        <Route path="/YurtaHome" element={<YurtaHome/> } />
       </Routes>
     </div>
   );
