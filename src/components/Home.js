@@ -61,7 +61,7 @@ function Home() {
     });
   }
 
-  const jsonData = [
+  const cardData = [
     {
       category: "starRate",
       img: "image/chris.jpg",
@@ -528,7 +528,7 @@ function Home() {
       <p className="header" id="soob">
         СООБЩЕСТВО
       </p>
-      <Card data={jsonData} category="starRate" />
+      <Card data={cardData} category="starRate" />
       <br />
       {/*Плюсики*/}
       <div className="plus">
@@ -653,14 +653,14 @@ function Home() {
         <p>Мы рекомендуем контент по дизайну интерьера, который вам может понравиться</p>
       </div>
       &nbsp; &nbsp; &nbsp; &nbsp;
-      <Card data={jsonData} category="thumbRate" />
+      <Card data={cardData} category="thumbRate" />
       &nbsp; &nbsp; &nbsp;
       <br />
       &nbsp; &nbsp;
       <div className="headline">
         <h4>ЛУЧШЕЕ за неделю✨ Вы все это видели? 👇</h4>
       </div>
-      <Card data={jsonData} category="thumbRate-slim" />
+      <Card data={cardData} category="thumbRate-slim" />
       <br />
       <div className="headline">
         <h5>Найдите по категориям </h5>
@@ -735,7 +735,7 @@ function Home() {
       <div className="headline">
         <h4>Самые популярные🔝😉 сообщества этой недели </h4>
       </div>
-      <Card data={jsonData} category="thumbRate-tall" />
+      <Card data={cardData} category="thumbRate-tall" />
       <p className="header" id="pokupki">
         ПОКУПКИ
       </p>
@@ -785,7 +785,7 @@ function Home() {
           <small>Успейте купить. Такая цена только сегодня</small>
         </p>
       </div>
-      <Card data={jsonData} category="price" />
+      <Card data={cardData} category="price" />
       <div className="menu-third">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{" "}
         <li>
@@ -866,7 +866,7 @@ function Home() {
       <div className="headline">
         <h4>Популярные товары этой недели</h4>
       </div>
-      <Card data={jsonData} category="price-popular" />
+      <Card data={cardData} category="price-popular" />
       <p className="header" id="dizain">
         ДИЗАЙН
       </p>
@@ -894,7 +894,7 @@ function Home() {
       <div className="input-field">
         <input id="search" type="text" placeholder="Search..." />
       </div>
-      <Card data={jsonData} category="thumbViews" />
+      <Card data={cardData} category="thumbViews" />
       &nbsp; &nbsp;
       <Footer />
       &nbsp; &nbsp;
