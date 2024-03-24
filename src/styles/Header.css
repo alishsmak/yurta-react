@@ -115,6 +115,10 @@ nav {
 }
 
 @media screen and (max-width: 1280px) {
+  .nav-menu {
+    width: 50vw;
+  }
+
   .magnifier {
     display: block;
     padding-right: 0.5rem;
@@ -128,12 +132,12 @@ nav {
   .search-input {
     position: fixed;
     height: 100vh;
-    width: 40vw;
-    max-width: 40%;
+    width: 50vw;
+    max-width: 50%;
     padding: 10px;
     top: 0px;
     bottom: 0px;
-    right: -160%;
+    right: -200%;
     opacity: 1;
     transition: all 0.3s ease;
   }
@@ -173,7 +177,7 @@ nav {
     padding: 10px;
     position: absolute;
     top: 80px;
-    left: -140%;
+    left: -200%;
     opacity: 1;
     transition: all 0.3s ease;
     justify-content: start;
@@ -234,9 +238,19 @@ nav {
     left: 100%;
     backdrop-filter: blur(1.5px);
   }
+
+  .search-input {
+    width: 60vw;
+    max-width: 60%;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .nav-menu {
+    width: 70vw;
+    max-width: 70%;
+  }
+
   .letter {
     position: absolute;
     margin: 0;
@@ -248,10 +262,15 @@ nav {
   }
 
   .letter.active {
-    left: 20%;
+    left: 35%;
     transform: translate(-50%, 0%);
     opacity: 1;
     transition: all 0.3s ease;
     z-index: 1000;
+  }
+
+  .search-input {
+    width: 70vw;
+    max-width: 70%;
   }
 }

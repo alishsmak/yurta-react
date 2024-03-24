@@ -1,8 +1,8 @@
-/*Второе Меню */
 .carousel {
   z-index: 0;
 }
 
+/*Второе Меню */
 .menu-second {
   display: flex;
   justify-content: space-evenly;
@@ -111,6 +111,7 @@ h3 {
   justify-content: center;
   padding: 20px;
 }
+
 .dom {
   background-color: #f5f5f5;
   color: gray;
@@ -130,17 +131,20 @@ h3 {
   margin-left: 30px;
   margin-right: 30px;
 }
+
 /*Контайнер для всех фотографий*/
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .big-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
 .room {
   display: flex;
   flex-wrap: wrap;
