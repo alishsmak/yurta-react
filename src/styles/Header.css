@@ -7,7 +7,6 @@ header {
   justify-content: center;
   align-items: baseline;
   font-size: 1.15rem;
-  /* position: sticky; */
   top: 0;
   z-index: 999;
 }
@@ -24,19 +23,16 @@ nav {
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  /* grid-gap: 2px; */
   list-style: none;
   text-align: center;
   justify-self: center;
   justify-content: center;
-  /* width: 40vw; */
-  /* justify-content: end; */
   margin-right: 2rem;
 }
 
 .navbar-logo {
   color: #242424;
-  justify-self: start;
+  justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
@@ -55,7 +51,6 @@ nav {
   align-items: center;
   text-decoration: none;
   margin-top: 0.5rem;
-  /* padding: 0rem 1rem; */
   height: 100%;
 }
 
@@ -104,6 +99,17 @@ nav {
 
 .letter {
   padding: 0 0.5rem;
+}
+
+.letter button {
+  border-radius: 7px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  background-color: #35c5f0;
+  cursor: pointer;
 }
 
 .navbar-buttons {
@@ -180,7 +186,7 @@ nav {
     left: -200%;
     opacity: 1;
     transition: all 0.3s ease;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   .nav-menu.active {

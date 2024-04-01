@@ -1,5 +1,10 @@
+.shop-content {
+  margin: auto;
+}
+
 .carousel {
   z-index: 0;
+  width: 100vw;
 }
 
 /*Второе Меню */
@@ -159,6 +164,7 @@ h3 {
 .room:hover {
   transform: scale(1.05);
 }
+
 #search {
   flex: 1;
   flex-wrap: wrap;

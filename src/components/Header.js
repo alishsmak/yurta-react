@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
-import { useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import "../styles/Header.css";
 
 function Header() {
@@ -48,7 +47,7 @@ function Header() {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <div id="menu-blur" className="blur" onClick={closeMobileMenu}></div>
           <li className="nav-item">
-            <NavLink to="/" className="nav-link" onClick={closeMobileMenu}>
+            <NavLink to="/forum" className="nav-link" onClick={closeMobileMenu}>
               Сообщество
             </NavLink>
           </li>

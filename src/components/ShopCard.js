@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Card = (props) => {
+const ShopCard = (props) => {
   const data = props.data;
   const category = props.category;
 
@@ -179,4 +179,4 @@ const Card = (props) => {
   return <div className="container">{listItem}</div>;
 };
 
-export default Card;
+export default ShopCard;

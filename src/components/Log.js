@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles//Log.css";
 
 function Log() {
@@ -55,70 +55,86 @@ function Log() {
 
   return (
     <>
-      <div className="logo">
-        <Link className="logo" to="/">
-          {" "}
-          <img src="../image/logo.jpg" alt="" width="60px" height="60px" />
-          <h2>YurtaHome</h2>
-        </Link>
-      </div>
-      <div className="big-container">
-        <div id="socialLogin">
-          <form id="loginForm">
-            {/*  <label for="username">Имя пользователя</label>*/}
-            <input className="enter" type="text" id="username" name="username" placeholder="электоронная почта" required="" />
-            {/*  <label for="password">Пароль:</label>*/}
-            <input className="enter" type="password" id="password" name="password" placeholder="пароль" required="" />
-            <br />
-            <button className="login" type="button" onClick={login}>
-              Войти
-            </button>
-          </form>
+      <div className="log-content">
+        <div className="logo">
+          <Link className="logo" to="/">
+            {" "}
+            <img src="../image/logo.jpg" alt="" width="60px" height="60px" />
+            <h2>YurtaHome</h2>
+          </Link>
         </div>
-        <div className="combine">
-          <div className="changepassword">
-            <a className="liner" href="/">
-              <p>Сбросить пароль</p>
+        <div className="big-container">
+          <div id="socialLogin">
+            <form id="loginForm">
+              {/*  <label for="username">Имя пользователя</label>*/}
+              <input
+                className="enter"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="электоронная почта"
+                required=""
+              />
+              {/*  <label for="password">Пароль:</label>*/}
+              <input
+                className="enter"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="пароль"
+                required=""
+              />
+              <br />
+              <button className="login" type="button" onClick={login}>
+                Войти
+              </button>
+            </form>
+          </div>
+          <div className="combine">
+            <div className="changepassword">
+              <a className="liner" href="/">
+                <p>Сбросить пароль</p>
+              </a>
+            </div>
+            <div className="registration">
+              <a className="liner" href="register.html">
+                <p>Зарегистрироваться</p>
+              </a>
+            </div>
+          </div>
+          <div className="join">
+            <p>Простой вход/регистрация членства с помощью учетной записи SNS </p>
+          </div>
+          <div className="whats">
+            <div className="gmail" onClick={loginWithGmail}>
+              <img src="image/gmail.png" alt="" width="50px" />
+            </div>
+            <div className="whatsap" onClick={loginWithWhatsApp}>
+              <img src="image/whatsapp.png" alt="" width="50px" />
+            </div>
+            <div className="facebook" onClick={loginWithFacebook}>
+              <img src="image/facebook.png" alt="" width="50px" />
+            </div>
+          </div>
+          <div className="mistake">
+            <a className="mistake" href="/">
+              <p>У вас возникли проблемы со входом?</p>
             </a>
           </div>
-          <div className="registration">
-            <a className="liner" href="register.html">
-              <p>Зарегистрироваться</p>
-            </a>
-          </div>
         </div>
-        <div className="join">
-          <p>Простой вход/регистрация членства с помощью учетной записи SNS </p>
+        <div className="line">
+          <p>___________________________________</p>
         </div>
-        <div className="whats">
-          <div className="gmail" onClick={loginWithGmail}>
-            <img src="image/gmail.png" alt="" width="50px" />
-          </div>
-          <div className="whatsap" onClick={loginWithWhatsApp}>
-            <img src="image/whatsapp.png" alt="" width="50px" />
-          </div>
-          <div className="facebook" onClick={loginWithFacebook}>
-            <img src="image/facebook.png" alt="" width="50px" />
-          </div>
+        <div className="rights">
+          <p>ТОО ILA Group Все права защищены</p>
         </div>
-        <div className="mistake">
-          <a className="mistake" href="/">
-            <p>У вас возникли проблемы со входом?</p>
-          </a>
+        <div id="profile" className="hidden">
+          <h2>
+            Согласие
+            <span id="userSpan" />!
+          </h2>
+          <button onClick={logout}>Выйти</button>
         </div>
-      </div>
-      <div className="line">
-        <p>___________________________________</p>
-      </div>
-      <div className="rights">
-        <p>ТОО ILA Group Все права защищены</p>
-      </div>
-      <div id="profile" className="hidden">
-        <h2>
-          Согласие
-          <span id="userSpan" />!
-        </h2>
-        <button onClick={logout}>Выйти</button>
       </div>
     </>
   );
