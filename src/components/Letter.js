@@ -5,14 +5,14 @@ import "../styles/Letter.css";
 function Letter() {
   return (
     <>
-      <div className="letter-logo">
-        <Link className="logo" to="/">
-          <img src="../image/logo.jpg" alt="" width="60px" height="60px" />
-          <h2>YurtaHome</h2>
-        </Link>
-      </div>
-      <h3>Напишите о своем опыте:</h3>
       <div className="letter-container">
+        <div className="letter-logo">
+          <Link className="logo" to="/">
+            <img src="../image/logo.jpg" alt="" width="60px" height="60px" />
+            <h2>YurtaHome</h2>
+          </Link>
+        </div>
+        <h3>Напишите о своем опыте:</h3>
         <form action="/action_page.php">
           <label htmlFor="fname">Ваше имя</label>
           <input type="text" id="fname" name="firstname" placeholder="Мое имя.." />
@@ -26,7 +26,13 @@ function Letter() {
             <option value="usa">Написать о ноу-хау</option>
           </select>
           <label htmlFor="subject">Заголовок</label>
-          <textarea id="subject" name="subject" placeholder="Напишите..." style={{ height: 200 }} defaultValue={""} />
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Напишите..."
+            style={{ height: 200 }}
+            defaultValue={""}
+          />
           <input type="submit" defaultValue="Отправить" />
         </form>
       </div>

@@ -4,7 +4,7 @@
 
 .carousel {
   z-index: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 /*Второе Меню */
@@ -58,7 +58,7 @@
   margin: 0 10px;
 }
 
-li {
+.shop-content li {
   list-style: none;
 }
 
@@ -87,7 +87,7 @@ li {
   color: #363636;
 }
 
-p {
+.shop-content p {
   font-family: "Montserrat", sans-serif;
 }
 #cont {
@@ -105,7 +105,7 @@ p {
   margin-left: 30px;
 }
 
-h3 {
+.shop-content h3 {
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
@@ -160,7 +160,6 @@ h3 {
   margin: 5px;
   cursor: pointer;
   transition: transform 0.3s;
-  background-color: #00bbff;
   width: 300px;
   height: auto;
 }
@@ -184,7 +183,7 @@ h3 {
   padding: 5px;
 }
 
-input[type="checkbox"] {
+.shop-content input[type="checkbox"] {
   display: none;
 }
 
@@ -213,7 +212,7 @@ input[type="checkbox"] {
   overflow: hidden;
 }
 
-b {
+.shop-content b {
   color: #00bbff;
 }
 .text2 {

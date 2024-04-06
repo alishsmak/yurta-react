@@ -1,11 +1,11 @@
-body {
+.letter-container {
   font-family: Arial, Helvetica, sans-serif;
 }
-h3 {
+.letter-container h3 {
   margin-left: 100px;
 }
 
-input[type="text"],
+.letter-container input[type="text"],
 select,
 textarea {
   width: 100%;
@@ -18,7 +18,7 @@ textarea {
   resize: vertical;
 }
 
-input[type="submit"] {
+.letter-container input[type="submit"] {
   background-color: #00bbff;
   color: #fafafa;
   padding: 12px 20px;
@@ -27,7 +27,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.letter-container input[type="submit"]:hover {
   background-color: #00bbff;
 }
 

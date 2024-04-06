@@ -68,34 +68,32 @@ function Shop() {
         <Header />
       </Headroom>
       <hr />
-        <div className="menu-second">
-          <Link className="menu-two" to="/">
-            Квартира
-          </Link>
-          <Link className="menu-two" to="/">
-            Дом
-          </Link>
-          <Link className="menu-two" to="/">
-            Комната
-          </Link>
-          <Link className="menu-two" to="/">
-            Дача
-          </Link>
-          <Link className="menu-two" to="/">
-            Каналы
-          </Link>
-          <Link className="menu-two" to="/">
-            События
-          </Link>
-          <Link className="menu-two" to="/">
-            Предложения
-          </Link>
-          <Link className="menu-two" to="/">
-            Топ
-          </Link>
-        </div>
-        <hr />
-        <br />
+      <div className="menu-second">
+        <Link className="menu-two" to="/">
+          Квартира
+        </Link>
+        <Link className="menu-two" to="/">
+          Дом
+        </Link>
+        <Link className="menu-two" to="/">
+          Комната
+        </Link>
+        <Link className="menu-two" to="/">
+          Дача
+        </Link>
+        <Link className="menu-two" to="/">
+          Каналы
+        </Link>
+        <Link className="menu-two" to="/">
+          События
+        </Link>
+        <Link className="menu-two" to="/">
+          Предложения
+        </Link>
+        <Link className="menu-two" to="/">
+          Топ
+        </Link>
+      </div>
       <div className="shop-content">
         {/* Верхний слайд */}
         <div
@@ -136,7 +134,6 @@ function Shop() {
             <span className="visually-hidden">Следующий</span>
           </button>
         </div>
-        <br />
         <div className="menu-third">
           <li>
             <a href="/">
@@ -203,12 +200,10 @@ function Shop() {
             </a>
           </li>
         </div>
-        <br />
         <p className="header" id="soob">
           СООБЩЕСТВО
         </p>
         <ShopCard data={cardData} category="starRate" />
-        <br />
         {/*Плюсики*/}
         <div className="plus">
           <div className="plus-pictures">
@@ -335,12 +330,10 @@ function Shop() {
           <p>Мы рекомендуем контент по дизайну интерьера, который вам может понравиться</p>
         </div>
         <ShopCard data={cardData} category="thumbRate" />
-        <br />
         <div className="headline">
           <h4>ЛУЧШЕЕ за неделю✨ Вы все это видели? 👇</h4>
         </div>
         <ShopCard data={cardData} category="thumbRate-slim" />
-        <br />
         <div className="headline">
           <h5>Найдите по категориям </h5>
         </div>
@@ -400,7 +393,6 @@ function Shop() {
             </a>
           </li>
         </div>
-        <br />
         <div className="headline">
           <h4>Самые популярные🔝😉 сообщества этой недели </h4>
         </div>
@@ -408,7 +400,6 @@ function Shop() {
         <p className="header" id="pokupki">
           ПОКУПКИ
         </p>
-        <br />
         <div
           id="carouselExampleFade"
           className="carousel slide carousel-fade"
@@ -444,7 +435,6 @@ function Shop() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <br />
         {/*ПОИСК*/}
         <div className="input-field">
           <input id="search" type="text" placeholder="Search..." />
@@ -526,7 +516,6 @@ function Shop() {
             </a>
           </li>
         </div>
-        <br />
         <div className="headline">
           <h4>Популярные товары этой недели</h4>
         </div>
