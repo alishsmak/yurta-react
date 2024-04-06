@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useRef } from "react";
 import { switcherData } from "./RoomSwitcherData";
+import ImageWithBookmark from './ImageWithBookmark';
 
 function RoomSwitcher() {
   const [catalog, setCatalog] = useState(switcherData);
@@ -41,7 +42,7 @@ function RoomSwitcher() {
         {catalog.map((element) => {
           return (
             <div className="room-switcher-card" key={element.id}>
-              <img src={element.image} alt="" />
+              <ImageWithBookmark key={element.id} src={element.image} />
 
               <div className="room-switcher-card-info">
                 <h6>{element.name}</h6>

@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.room-switcher button {
+.room-switcher-catalog button {
   margin: 10px;
   background-color: #30c8ff;
   border-radius: 7px;
@@ -18,17 +18,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.room-switcher button:focus {
+.room-switcher-catalog button:focus {
   background-color: blue;
 }
 
 .room-switcher-wrapper {
-  /* position: relative; */
   margin: 2rem;
-  /* display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
-  justify-content: center; */
   display: flex;
   flex-direction: row;
   overflow-y: auto;
@@ -40,11 +35,7 @@
 }
 
 .room-switcher-card {
-  /* box-shadow: 0 0 10px 5px #eeeeee;
-  border-radius: 5px; */
-  /* min-width: 28rem; */
   min-width: 14rem;
-  /* height: 16rem; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -73,10 +64,24 @@
   position: absolute;
   left: 0;
   top: 45%;
+  margin: 10px;
+  background-color: #30c8ff;
+  border-radius: 7px;
+  color: white;
+  font-weight: 700;
+  padding: 5px 10px;
+  border: none;
 }
 
 .button-right {
   position: absolute;
   right: 0;
   top: 45%;
+  margin: 10px;
+  background-color: #30c8ff;
+  border-radius: 7px;
+  color: white;
+  font-weight: 700;
+  padding: 5px 10px;
+  border: none;
 }

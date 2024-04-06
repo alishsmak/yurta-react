@@ -57,7 +57,7 @@ function Header() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/" className="nav-link" onClick={closeMobileMenu}>
+            <NavLink to="/design" className="nav-link" onClick={closeMobileMenu}>
               Дизайн
             </NavLink>
           </li>

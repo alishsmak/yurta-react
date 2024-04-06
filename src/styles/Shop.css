@@ -160,6 +160,9 @@ h3 {
   margin: 5px;
   cursor: pointer;
   transition: transform 0.3s;
+  background-color: #00bbff;
+  width: 300px;
+  height: auto;
 }
 .room:hover {
   transform: scale(1.05);

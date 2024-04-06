@@ -1,0 +1,23 @@
+.image-container {
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .image {
+    width: 100%; 
+  }
+  
+  .bookmark-button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .bookmark-button img {
+    width: 25px; 
+    height: 30px; 
+  }
+  
