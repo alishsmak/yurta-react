@@ -4,6 +4,8 @@ import Log from "./components/Log";
 import Letter from "./components/Letter";
 import Forum from "./components/Forum";
 import "./App.css";
+import Clock from "./AdvertClock/Clock";
+
 
 function App() {
   return (
@@ -13,9 +15,12 @@ function App() {
         <Route path="/log" element={<Log />} />
         <Route path="/letter" element={<Letter />} />
         <Route path="/forum" element={<Forum />} />
+        <Route path="/clock" element ={<Clock/>} />
       </Routes>
     </div>
   );
 }
+
+
 
 export default App;
