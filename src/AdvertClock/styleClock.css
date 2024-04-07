@@ -1,4 +1,4 @@
-/* styles.css (or equivalent) */
+
 
 .app-container {
     display: flex;
@@ -6,27 +6,27 @@
     align-items: center;
     height: 100vh;
     
-    background-color: #f0f0f0; /* Set a background color for the app */
+    background-color: #f0f0f0; 
   }
   
   .image-container {
     position: relative;
-    width: 300px; /* Adjust the width of each image container */
-    height: 400px; /* Adjust the height of each image container */
+    width: 300px; 
+    height: 400px; 
     margin: 20px;
   }
   
   .background-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the container */
+    object-fit: cover; 
   }
   
   .clock-overlay {
     position: absolute;
-    top: 20px; /* Adjust the top position as needed */
-    left: 20px; /* Adjust the left position as needed */
-    background-color: #ff7777; /* Semi-transparent background for clock */
+    top: 20px; 
+    left: 20px; 
+    background-color: #ff7777; 
     color: white;
     
     font-size: 20px;
