@@ -21,18 +21,24 @@ const ClockApp = () => {
         <div className="clock-overlay">
           <Clock saleDate={saleDate} />
         </div>
+        <p>При покупки кондиционера, сервис бесплатный...</p>
+        <p><b>155 000тг</b></p>
       </div>
       <div className="image-container">
         <img src={image2} alt="Image 2" className="background-image" width="230px"  />
         <div className="clock-overlay">
           <Clock saleDate={saleDate} />
         </div>
+        <p>Успей купить подушку как в отеле, о которой ты так мечтала...</p>
+        <p><b>11 000тг</b></p>
       </div>
       <div className="image-container">
     <img src={image3}  alt="Image 3" className="background-image" width="250px" height="345px"  />
       <div className="clock-overlay">
           <Clock saleDate={saleDate} />
         </div>
+        <p>Сегодня только это скидка на стиральную машину от LG </p>
+        <p><b>240 000тг</b></p>
       </div>
     </div>
   );
