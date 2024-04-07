@@ -7,6 +7,7 @@ import Clock from './Clock';
 import image1 from './AC.jpg'; 
 import image2 from './pillow.jpg';
 import image3 from './washing.jpg';
+import image4 from './table.jpg';
 import './styleClock.css'; 
 
 
@@ -39,6 +40,15 @@ const ClockApp = () => {
         </div>
         <p>Сегодня только это скидка на стиральную машину от LG </p>
         <p><b>240 000тг</b></p>
+      </div>
+
+      <div className="image-container">
+    <img src={image4}  alt="Image 4" className="background-image" width="250px" height="345px"  />
+      <div className="clock-overlay">
+          <Clock saleDate={saleDate} />
+        </div>
+        <p>Только сегодня, можешь купить этот замечательный стол... </p>
+        <p><b>80 000тг</b></p>
       </div>
     </div>
   );
