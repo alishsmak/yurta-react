@@ -54,8 +54,7 @@ function Log() {
   }
 
   return (
-    <>
-      <div className="log-content">
+      <div className="log-container">
         <div className="logo">
           <Link className="logo" to="/">
             {" "}
@@ -136,7 +135,6 @@ function Log() {
           <button onClick={logout}>Выйти</button>
         </div>
       </div>
-    </>
   );
 }
 

@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Shop from "./components/Shop";
-import Log from "./components/Log";
-import Letter from "./components/Letter";
-import Forum from "./components/Forum";
+import Shop from "./pages/Shop";
+import Log from "./pages/Log";
+import Letter from "./pages/Letter";
+import Forum from "./pages/Forum";
 import "./App.css";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/log" element={<Log />} />
         <Route path="/letter" element={<Letter />} />
         <Route path="/forum" element={<Forum />} />
+        <Route path="/blog/:id" element={<Blog />} />
       </Routes>
     </div>
   );

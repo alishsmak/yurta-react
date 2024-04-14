@@ -1,11 +1,14 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Headroom from "react-headroom";
 import "../styles/Forum.css";
-import RoomSwitcher from "./RoomSwitcher";
+import RoomSwitcher from "../components/RoomSwitcher";
 import { Link } from "react-router-dom";
-import ImageWithBookmark from "./ImageWithBookmark";
+import ImageWithBookmark from "../components/ImageWithBookmark";
+import Blog from "./Blog";
+import { blogData } from "../components/BlogData";
+import BlogCard from "../components/BlogCard";
 
 function Forum() {
   return (
@@ -13,7 +16,7 @@ function Forum() {
       <Headroom>
         <Header />
       </Headroom>
-      <div className="forum-content">
+      <div className="forum-container">
         <div className="banner">
           <div className="banner1">
             <Link>
@@ -31,20 +34,7 @@ function Forum() {
             <h3>Ищете что-то похожее?</h3>
             <p>Возможно вам понравится что-то из этого</p>
           </div>
-          <div className="blog-wrapper">
-            <Link to="" className="blog-card">
-              <ImageWithBookmark src="image/cat.jpg" />
-            </Link>
-            <Link className="blog-card">
-              <ImageWithBookmark src="image/cat.jpg" />
-            </Link>
-            <Link className="blog-card">
-              <ImageWithBookmark src="image/cat.jpg" />
-            </Link>
-            <Link className="blog-card">
-              <ImageWithBookmark src="image/cat.jpg" />
-            </Link>
-          </div>
+          <BlogCard data={blogData} category="recommendation" />
         </div>
         <RoomSwitcher />
       </div>

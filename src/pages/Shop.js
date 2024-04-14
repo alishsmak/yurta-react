@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Headroom from "react-headroom";
-import ShopCard from "./ShopCard";
-import { cardData } from "./ShopCardData";
+import ShopCard from "../components/ShopCard";
+import { cardData } from "../components/ShopCardData";
 import "../styles/Shop.css";
 
 function Shop() {
@@ -94,7 +94,7 @@ function Shop() {
           Топ
         </Link>
       </div>
-      <div className="shop-content">
+      <div className="shop-container">
         {/* Верхний слайд */}
         <div
           id="carouselExampleFade"

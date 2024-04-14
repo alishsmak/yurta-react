@@ -1,12 +1,16 @@
 .image-container {
-    position: relative;
-    display: inline-block; 
-  }
-  
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
   .image {
-    width: 100%; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
   }
-  
+
   .bookmark-button {
     position: absolute;
     top: 3px;
@@ -15,9 +19,9 @@
     border: none;
     cursor: pointer;
     
+    img {
+      width: 25px;
+      height: 30px;
+    }
   }
-  .bookmark-button img {
-    width: 25px; 
-    height: 30px; 
-  }
-  
+}

@@ -6,6 +6,7 @@ const ShopCard = (props) => {
   const category = props.category;
 
   var listItem = data.filter((a) => a.category == category);
+  console.log(listItem)
 
   if (category == "starRate") {
     listItem = listItem.map((item) => {
