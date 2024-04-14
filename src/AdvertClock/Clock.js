@@ -1,6 +1,6 @@
 // Clock.js
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Clock = ({ saleDate }) => {
   const [remainingTime, setRemainingTime] = useState(calculateTimeRemaining());
@@ -15,13 +15,13 @@ const Clock = ({ saleDate }) => {
 
   function calculateTimeRemaining() {
     const now = new Date();
-    if (!saleDate) return 0; 
+    if (!saleDate) return 0;
     const diff = saleDate.getTime() - now.getTime();
     return Math.max(diff, 0);
   }
 
   function formatTime(time) {
-    return (time < 10 ? '0' : '') + time;
+    return (time < 10 ? "0" : "") + time;
   }
 
   const hours = Math.floor((remainingTime / (1000 * 60 * 60)) % 24);
@@ -31,8 +31,10 @@ const Clock = ({ saleDate }) => {
   return (
     <div className="clock-overlay">
       <div className="clock-face">
-      <p>Осталось:
-        {formatTime(hours)}:{formatTime(minutes)}:{formatTime(seconds)}</p>
+        <span>
+          {"Осталось: "}
+          {formatTime(hours)}:{formatTime(minutes)}:{formatTime(seconds)}
+        </span>
       </div>
     </div>
   );

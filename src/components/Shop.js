@@ -409,13 +409,8 @@ function Shop() {
           </p>
         </div>
 
-{/*Clocks */}
-
-
-
-<ClockApp/>
-
-
+        {/*Clocks */}
+        <ClockApp />
 
         <ShopCard data={cardData} category="price" />
         <div className="menu-third">
