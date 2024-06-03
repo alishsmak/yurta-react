@@ -72,15 +72,30 @@
   .log-content form {
     display: flex;
     flex-direction: column;
+  
   }
 
   .login {
+   
     background-color: #35c5f0;
     font-size: 20px;
+    border-color: #35c5f0;
     border-radius: 3px;
-    padding: 15px;
-  }
+    padding: 5px;
+    padding-left: 101px;
+    padding-right: 101px;
+    color: #fff;
+    padding-top: 15px;
 
+
+  }
+  .spaced-lines {
+    white-space: pre-line;
+  }
+  .enterText{
+    display: flex;
+    justify-content: center;
+  }
   .log-content label {
     margin-bottom: 8px;
   }
@@ -105,6 +120,7 @@
   .combine {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
   }
 
   .changepassword {

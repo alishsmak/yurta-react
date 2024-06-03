@@ -5,6 +5,7 @@ import Letter from "./pages/Letter";
 import Forum from "./pages/Forum";
 import "./App.css";
 import Blog from "./pages/Blog";
+import Registration from "./pages/Registration";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/letter" element={<Letter />} />
         <Route path="/forum" element={<Forum />} />
         <Route path="/blog/:id" element={<Blog />} />
+        <Route path="/registration" element={<Registration/>}/>
       </Routes>
     </div>
   );
