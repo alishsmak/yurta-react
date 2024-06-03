@@ -75,7 +75,7 @@ function Registration() {
                   type="checkbox"
                   checked={rememberMe}
                   onChange={(e) => setRememberMe(e.target.checked)}/>
-           
+           Запомните меня
               </label>
             </div>
             <div className="form-actions">
